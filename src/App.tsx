@@ -1,8 +1,9 @@
 import './App.css'
-
-function App() {
+import Header from './components/Header'
+const App=()=> {
   return (
     <>
+    <Header/>
     </>
   )
 }
