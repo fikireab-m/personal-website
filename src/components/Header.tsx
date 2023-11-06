@@ -86,13 +86,13 @@ const Header = ()=> {
           </Popover>
 
           <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Features
+            About
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Marketplace
+            Contact
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-white">
-            Company
+            View CV
           </a>
         </Popover.Group>
         <div className="hidden md:flex md:flex-1 md:justify-end">
@@ -154,19 +154,19 @@ const Header = ()=> {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-900"
                 >
-                  Features
+                  About
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-900"
                 >
-                  Marketplace
+                  Contact
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-900"
                 >
-                  Company
+                  View CV
                 </a>
               </div>
               <div className="py-6 m-auto text-center">
