@@ -5,7 +5,7 @@ import closeIcon from "../assets/icons/close-icon.svg"
 const Header = () => {
   const [activeIndex, setActiveIndex] = useState(0)
   const [menuOpen, setMenuOpen] = useState(false)
-  const menueItems = ["About", "Services", "Contact", "View CV"]
+  const menueItems = ["About", "Services", "Projects", "Contact"]
   function changeIndex(i: number) {
     setActiveIndex(i);
   }
