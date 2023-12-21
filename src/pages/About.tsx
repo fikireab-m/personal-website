@@ -22,22 +22,30 @@ const About = () => {
         }
     ]
     return (
-        <div className="w-full h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-600 via-gray-800 to-black text-lime-100 flex justify-center items-center">
-            <div className="flex justify-center items-center">
-                <div>
-                    <img src="" alt="" />
-                </div>
-                <div>
-                    {
-                        personalQualities.map((item, index) => (
-                            <span key={index}>
+        <div className="w-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-600 via-gray-800 to-black text-lime-100 flex flex-col justify-center items-center">
+            {
+                personalQualities.map((item, index) => (
+                    <>
+                        {index % 2 === 0 ? <div key={index} className="w-4/5 flex justfy-center items-center gap-4 p-16">
+                            <div className="w-2/5 text-center">
                                 <h1 className="text-4xl">{item.quality}</h1>
+                            </div>
+                            <div className="w-2/5 text-center">
                                 <p>{item.desc}</p>
-                            </span>
-                        ))
-                    }
-                </div>
-            </div>
+                            </div>
+                        </div>
+                            :
+                            <div key={index} className="w-4/5 flex justfy-center items-center gap-4 p-16">
+                                <div className="w-2/5 text-center">
+                                    <p>{item.desc}</p>
+                                </div>
+                                <div className="w-2/5 text-center">
+                                    <h1 className="text-4xl">{item.quality}</h1>
+                                </div>
+                            </div>}
+                    </>
+                ))
+            }
         </div>
     )
 }
