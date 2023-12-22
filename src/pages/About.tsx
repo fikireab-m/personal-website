@@ -26,7 +26,7 @@ const About = () => {
             {
                 personalQualities.map((item, index) => (
                     <>
-                        {index % 2 === 0 ? <div key={index} className="w-4/5 flex justfy-center items-center gap-4 p-16">
+                        {index % 2 === 0 ? <div key={index} className="w-4/5 flex justfy-center items-center gap-4 py-8 px-16">
                             <div className="w-2/5 text-center">
                                 <h1 className="text-4xl">{item.quality}</h1>
                             </div>
@@ -35,7 +35,7 @@ const About = () => {
                             </div>
                         </div>
                             :
-                            <div key={index} className="w-4/5 flex justfy-center items-center gap-4 p-16">
+                            <div key={index} className="w-4/5 flex justfy-center items-center gap-4 py-8 px-16">
                                 <div className="w-2/5 text-center">
                                     <p>{item.desc}</p>
                                 </div>
