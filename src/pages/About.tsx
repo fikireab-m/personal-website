@@ -22,7 +22,7 @@ const About = () => {
         }
     ]
     return (
-        <div className="w-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-600 via-gray-800 to-black text-lime-100 flex flex-col justify-center items-center">
+        <div id="about" className="w-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-600 via-gray-800 to-black text-lime-100 flex flex-col justify-center items-center">
             {
                 personalQualities.map((item, index) => (
                     <>
