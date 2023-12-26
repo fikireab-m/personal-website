@@ -1,6 +1,7 @@
 import { useState } from "react";
 import menuIcon from "../assets/icons/menu-icon.svg"
 import closeIcon from "../assets/icons/close-icon.svg"
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -10,7 +11,12 @@ const Header = () => {
     setActiveIndex(i);
   }
   return (
-    <header className="absolute z-10 left-0 right-0 top-0 flex items-center justify-center bg-transparent">
+    <motion.header className="absolute z-10 left-0 right-0 top-0 flex items-center justify-center bg-transparent"
+    initial={{y:-200,scale:0.1}}
+    animate={{y:0, scale:1.0}}
+    transition={{type:'spring',stiffness: 100, duration:2.0}}
+    
+    >
       <nav className="block xs:hidden w-full flex p-4 bg-black backdrop-blur-lg bg-opacity-30">
         {menuOpen
           ? <div className="w-full flex justify-between items-start">
@@ -50,7 +56,7 @@ const Header = () => {
           ))
         }
       </nav>
-    </header>
+    </motion.header>
   )
 }
 export default Header;
