@@ -9,6 +9,9 @@ const Header = () => {
   const menueItems = [{ name: "Home", url: "#home" }, { name: "About", url: "#about" }, { name: "Services", url: "#services" }, { name: "Projects", url: "#projects" }, { name: "Contact", url: "#contact" }]
   function changeIndex(i: number) {
     setActiveIndex(i);
+    if (menuOpen) {
+      setMenuOpen(false);
+    }
   }
   return (
     <motion.header className="fixed z-10 left-0 right-0 top-0 flex items-center justify-center bg-transparent"
