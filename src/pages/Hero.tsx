@@ -1,6 +1,6 @@
 import { LazyMotion, domAnimation, m, motion } from "framer-motion"
 import styles from "./hero.module.css"
-import myPic from "../assets/images/picme.png"
+import myPic from "../assets/images/picme.svg"
 
 const Hero = () => {
   const style = {
@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="w-full xl:w-10/12 py-16 lg:px-8 block md:flex gap-4 justify-center items-center">
           <div className="w-full md:w-3/5 pt-16 flex flex-col justify-center items-center">
             <motion.h1 className="bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-teal-400 text-5xl xs:text-5xl sm:text-6xl font-black leading-relaxed text-center"
-              initial={{ y: 1800, opacity: 0 }}
+              initial={{ y: -1800, opacity: 0 }}
               animate={{ y: 0, opacity: 1.0 }}
               transition={{ duration: 1.0 }}
             >
@@ -25,7 +25,7 @@ const Hero = () => {
               ))}
             </motion.h1>
             <motion.h1 className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-slate-400 text-5xl xs:text-5xl sm:text-6xl md:text-8xl font-black leading-relaxed text-center"
-              initial={{ y: 1800, opacity: 0 }}
+              initial={{ y: -1800, opacity: 0 }}
               animate={{ y: 0, opacity: 1.0 }}
               transition={{ delay: 0.2, duration: 1.0, ease: 'easeOut' }}
             >
@@ -36,8 +36,8 @@ const Hero = () => {
               ))}
             </motion.h1>
           </div>
-          <motion.div className={`pic_container w-full md:w-2/5`}
-            initial={{ x: -1800, opacity: 0 }}
+          <motion.div className="w-full md:w-2/5" style={style}
+            initial={{ x: 1800, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 1.5, ease: 'easeOut' }}
           >
