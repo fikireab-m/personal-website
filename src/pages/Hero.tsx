@@ -39,12 +39,15 @@ export default function Hero() {
               </a>
             </div>
           </div>
-          <div className="max-w-xl bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-600 to-purple-300 bg-gradient-to-r p-2" style={{ clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)", filter:"blure(20px)"}}>
-            <div className="max-w-xl bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r " style={{ clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)" }}>
-              <div className="max-w-xl bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r" style={{ clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)" }}>
+          <div className="flex flex-col jusfiy-center items-center">
+            <div className="max-w-xl bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-900 to-purple-600 bg-gradient-to-r bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-300 to-purple-600 bg-gradient-to-r p-2" style={{
+              clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)", filter: "blur(1px)", transform: "skewX(-10deg)"
+            }}>
+              <div className="max-w-xl bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black" style={{ clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)", filter: "grayscale(75%)" }}>
                 <img src={myPic} alt="my photo" />
               </div>
             </div>
+            <div className="w-64 h-16 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900 via-gray-600 to-gray-600 shadow-2xl shadow-gray-900 rounded-full" style={{transform: "skewX(-10deg)", filter: "blur(10px)"}}/>
           </div>
         </div>
         <div
