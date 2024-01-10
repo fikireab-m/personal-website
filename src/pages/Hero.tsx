@@ -1,7 +1,7 @@
 import myPic from "../assets/images/picme.svg";
 export default function Hero() {
   return (
-    <div className="bg-dark">
+    <div className="bg-gray-900">
       <div className="relative isolate px-6 lg:px-8">
         <div
           className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-40"
@@ -15,6 +15,19 @@ export default function Hero() {
             }}
           />
         </div>
+        <svg
+          viewBox="0 0 1024 1024"
+          className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+          aria-hidden="true"
+        >
+          <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.2" />
+          <defs>
+            <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+              <stop stopColor="#7775D6" />
+              <stop offset={1} stopColor="#E935C1" />
+            </radialGradient>
+          </defs>
+        </svg>
         <div className="mx-auto max-w-9xl px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 mx-auto">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-transparent sm:text-9xl bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
@@ -30,24 +43,24 @@ export default function Hero() {
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
               fugiat veniam occaecat fugiat aliqua.
             </p>
-            <div className="mt-10">
-              <a
-                href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
+
+            <button className="mt-10 bg-gradient-to-r from-blue-600 to-indigo-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-full shadow-md hover:text-white shadow-blue-300 transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
+              <a href="#">
                 Contact me
               </a>
-            </div>
+            </button>
           </div>
-          <div className="flex flex-col jusfiy-center items-center">
-            <div className="max-w-xl bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-900 to-purple-600 bg-gradient-to-r bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-300 to-purple-600 bg-gradient-to-r p-2" style={{
-              clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)", filter: "blur(1px)", transform: "skewX(-10deg)"
+          <div className="max-w-xl flex flex-col jusfiy-center items-center gap-2">
+            <div className="max-w-xl bg-[#3e3080] pt-2 pr-2" style={{
+              clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)", transform: "skewX(-10deg)"
             }}>
-              <div className="max-w-xl bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black" style={{ clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)", filter: "grayscale(75%)" }}>
-                <img src={myPic} alt="my photo" />
+              <div className="max-w-xl bg-purple-900 pt-4 pr-1" style={{ clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)", filter: "grayscale(75%)" }}>
+                <div className="max-w-xl bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black" style={{ clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)", filter: "grayscale(75%)" }}>
+                  <img src={myPic} alt="my photo" className="w-96"/>
+                </div>
               </div>
             </div>
-            <div className="w-64 h-16 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900 via-gray-600 to-gray-600 shadow-2xl shadow-gray-900 rounded-full" style={{transform: "skewX(-10deg)", filter: "blur(10px)"}}/>
+            <div className="-ml-36 w-1/2 h-16 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 via-blue-600 to-blue-600 shadow-2xl shadow-purple-600 rounded-full" style={{ transform: "skewX(-10deg)", filter: "blur(5px)" }} />
           </div>
         </div>
         <div
