@@ -7,12 +7,12 @@ const Header = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <motion.header className="fixed z-10 left-0 right-0 top-0 flex items-center justify-center bg-transparent"
+    <motion.header className="w-full fixed z-10 left-0 right-0 top-0 flex items-center justify-center bg-transparent"
       initial={{ y: -200, scale: 0.1 }}
       animate={{ y: 0, scale: 1.0 }}
       transition={{ type: 'spring', stiffness: 100, duration: 2.0 }}
     >
-      <nav className="hidden xs:block shadow-xl my-2 py-2 md:px-4 flex items-center justify-around max-w-xl bg-black rounded-full backdrop-blur-lg bg-opacity-50">
+      <nav className="hidden sm:block shadow-xl my-2 py-2 md:px-4 flex items-center justify-around max-w-xl bg-black rounded-full backdrop-blur-lg bg-opacity-50">
         {
           menueItems.map((item, index) => (
             <button key={index}

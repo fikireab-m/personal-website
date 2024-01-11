@@ -39,18 +39,22 @@ export default function Hero() {
             <h1 className="text-4xl font-bold tracking-tight text-transparent sm:text-6xl bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
               A software engineer.
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-200">
+            <p className="mt-6 text-xl font-thin leading-8 text-gray-200">
               Crafting Tomorrow's Solutions Today.<br /> Elevate Your Digital Experience with me.
             </p>
-            
-            <button className="ml-32 mt-10 bg-gradient-to-r from-blue-600 to-indigo-600 hover:bg-blue-500 text-white font-bold py-3 px-16 rounded-full shadow-md hover:text-white shadow-blue-300 transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
+
+            <button className="ml-32 mt-10 bg-gradient-to-r from-blue-600 to-indigo-600 hover:bg-blue-500 text-white font-bold py-3 px-8 lg:px-16 rounded-full shadow-md hover:text-white shadow-blue-300 transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
               <a href="#">
                 Contact me
               </a>
             </button>
           </div>
           <div className="max-w-xl pt-2 pr-2" >
-            <img src={open_laptop} alt="" />
+            <img src={open_laptop} alt="" style={{
+              mixBlendMode: "color-burn",
+              position: "relative",
+              overflow: "hidden"
+            }} />
           </div>
         </div>
         <div
