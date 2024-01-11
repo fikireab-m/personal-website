@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const Header = () => {
-  const menueItems = [{ name: "Home", url: "#home" }, { name: "About", url: "#about" }, { name: "Services", url: "#services" }, { name: "Projects", url: "#projects" }, { name: "Contact", url: "#contact" }]
+  const menueItems = [{ name: "About", url: "#about" }, { name: "Services", url: "#services" }, { name: "Projects", url: "#projects" }, { name: "Contact", url: "#contact" }]
 
   const [selected, setSelected] = useState(0);
 

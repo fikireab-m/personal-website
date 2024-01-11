@@ -1,7 +1,7 @@
-import myPic from "../assets/images/picme.svg";
+import open_laptop from "../assets/images/971.png";
 export default function Hero() {
   return (
-    <div className="bg-gray-900">
+    <div id="home" className="bg-gray-900">
       <div className="relative isolate px-6 lg:px-8">
         <div
           className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-40"
@@ -28,39 +28,29 @@ export default function Hero() {
             </radialGradient>
           </defs>
         </svg>
-        <div className="mx-auto max-w-9xl px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 mx-auto">
-          <div className="text-center">
+        <div className="mx-auto max-w-9xl px-8 py-24 grid grid-cols-1 md:grid-cols-2 items-center gap-8 mx-auto">
+          <div className="text-left">
             <h1 className="text-4xl font-bold tracking-tight text-transparent sm:text-9xl bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
               Hi.
             </h1>
             <h1 className="text-4xl font-bold tracking-tight text-transparent sm:text-6xl bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
-              I'm Fikireab Mekuriaw.
+              I'm Fikireab.
             </h1>
             <h1 className="text-4xl font-bold tracking-tight text-transparent sm:text-6xl bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
               A software engineer.
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-200">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+              Crafting Tomorrow's Solutions Today.<br /> Elevate Your Digital Experience with me.
             </p>
-
-            <button className="mt-10 bg-gradient-to-r from-blue-600 to-indigo-600 hover:bg-blue-500 text-white font-bold py-3 px-6 rounded-full shadow-md hover:text-white shadow-blue-300 transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
+            
+            <button className="ml-32 mt-10 bg-gradient-to-r from-blue-600 to-indigo-600 hover:bg-blue-500 text-white font-bold py-3 px-16 rounded-full shadow-md hover:text-white shadow-blue-300 transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
               <a href="#">
                 Contact me
               </a>
             </button>
           </div>
-          <div className="max-w-xl flex flex-col jusfiy-center items-center gap-2">
-            <div className="max-w-xl bg-[#3e3080] pt-2 pr-2" style={{
-              clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)", transform: "skewX(-10deg)"
-            }}>
-              <div className="max-w-xl bg-purple-900 pt-4 pr-1" style={{ clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)", filter: "grayscale(75%)" }}>
-                <div className="max-w-xl bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black" style={{ clipPath: "polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)", filter: "grayscale(75%)" }}>
-                  <img src={myPic} alt="my photo" className="w-96"/>
-                </div>
-              </div>
-            </div>
-            <div className="-ml-36 w-1/2 h-16 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 via-blue-600 to-blue-600 shadow-2xl shadow-purple-600 rounded-full" style={{ transform: "skewX(-10deg)", filter: "blur(5px)" }} />
+          <div className="max-w-xl pt-2 pr-2" >
+            <img src={open_laptop} alt="" />
           </div>
         </div>
         <div
