@@ -3,6 +3,7 @@ import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import cloudImg from "../assets/images/cloud.jpg";
+import AnimatingButton from "../components/AnimatingButton";
 export default function Hero() {
   return (
     <div className="bg-gray-900">
@@ -23,11 +24,12 @@ export default function Hero() {
               Crafting Tomorrow's Solutions Today.<br /> Elevate Your Digital Experience with me.
             </p>
 
-            <button className="lg:ml-32 mt-10 bg-gradient-to-r from-blue-600 to-indigo-600 hover:bg-blue-500 text-white font-bold py-3 px-8 lg:px-16 rounded-full shadow-md hover:text-white shadow-blue-300 transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
+            {/* <button className="lg:ml-32 mt-10 bg-gradient-to-r from-blue-600 to-indigo-600 hover:bg-blue-500 text-white font-bold py-3 px-8 lg:px-16 rounded-full shadow-md hover:text-white shadow-blue-300 transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
               <a href="#">
                 Contact me
               </a>
-            </button>
+            </button> */}
+            <AnimatingButton/>
           </div>
           <div className="col-span-3 pt-2 pr-2" >
             <About/>
