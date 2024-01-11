@@ -28,7 +28,7 @@ export default function Hero() {
             </radialGradient>
           </defs>
         </svg>
-        <div className="mx-auto max-w-9xl px-8 py-24 grid grid-cols-1 md:grid-cols-2 items-center gap-8 mx-auto">
+        <div className="mx-auto max-w-7xl px-8 py-24 grid grid-cols-1 md:grid-cols-2 items-center gap-8 mx-auto">
           <div className="text-left">
             <h1 className="text-4xl font-bold tracking-tight text-transparent sm:text-9xl bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
               Hi.
