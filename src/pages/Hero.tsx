@@ -1,15 +1,15 @@
 import open_laptop from "../assets/images/971.png";
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowLongRightIcon, ArrowSmallRightIcon } from "@heroicons/react/24/outline";
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import cloudImg from "../assets/images/cloud.jpg";
 export default function Hero() {
   return (
-    <div className="bg-gray-900 overflow-hidden h-screen">
+    <div className="bg-gray-900 lg:overflow-hidden lg:h-screen">
       <div className="relative isolate px-6 lg:px-8">
 
         <div className="mx-auto max-w-7xl px-8 py-8 grid grid-cols-1 md:grid-cols-5 items-center gap-8 mx-auto">
-          <div className="text-left col-span-2">
+          <div className="text-center md:text-left col-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-transparent sm:text-9xl bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
               Hi.
             </h1>
@@ -23,12 +23,11 @@ export default function Hero() {
               Crafting Tomorrow's Solutions Today.<br /> Elevate Your Digital Experience with me.
             </p>
 
-            <button className="flex justify-center items-center gap-2 mt-10 bg-gradient-to-br from-blue-600 to-purple-900 font-bold text-lg text-white py-3 px-16 rounded-lg tracking-normal transform transition-all duration-500 ease-in-out hover:tracking-widest hover:animate-pulse active:animate-bounce">
-              <ArrowSmallRightIcon className="w-8 h-8 -ml-2" />
-              <span>Contact Me</span>
+            <button className="mt-10 bg-gradient-to-br from-blue-600 to-purple-900 font-bold text-lg text-white py-3 px-8 lg:px-16 rounded-full tracking-normal transform transition-all duration-500 ease-in-out hover:tracking-widest hover:animate-pulse active:animate-bounce">
+              Contact Me
             </button>
           </div>
-          <div className="col-span-3 pr-2" >
+          <div className="col-span-3" >
             <Menu />
           </div>
         </div>
@@ -160,8 +159,8 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
           translateY: "-50%",
         }}
         variants={{
-          initial: { scale: 0},
-          whileHover: { scale: 1},
+          initial: { scale: 0 },
+          whileHover: { scale: 1 },
         }}
         transition={{ type: "spring" }}
         src={imgSrc}
