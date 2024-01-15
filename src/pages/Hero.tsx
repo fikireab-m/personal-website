@@ -1,12 +1,11 @@
 import open_laptop from "../assets/images/971.png";
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import { ArrowLongRightIcon, ArrowSmallRightIcon } from "@heroicons/react/24/outline";
 import cloudImg from "../assets/images/cloud.jpg";
-import AnimatingButton from "../components/AnimatingButton";
 export default function Hero() {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 overflow-hidden h-screen">
       <div className="relative isolate px-6 lg:px-8">
 
         <div className="mx-auto max-w-7xl px-8 py-8 grid grid-cols-1 md:grid-cols-5 items-center gap-8 mx-auto">
@@ -24,15 +23,13 @@ export default function Hero() {
               Crafting Tomorrow's Solutions Today.<br /> Elevate Your Digital Experience with me.
             </p>
 
-            {/* <button className="lg:ml-32 mt-10 bg-gradient-to-r from-blue-600 to-indigo-600 hover:bg-blue-500 text-white font-bold py-3 px-8 lg:px-16 rounded-full shadow-md hover:text-white shadow-blue-300 transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
-              <a href="#">
-                Contact me
-              </a>
-            </button> */}
-            <AnimatingButton/>
+            <button className="flex justify-center items-center gap-2 mt-10 bg-gradient-to-br from-blue-600 to-purple-900 font-bold text-lg text-white py-3 px-16 rounded-lg tracking-normal transform transition-all duration-500 ease-in-out hover:tracking-widest hover:animate-pulse active:animate-bounce">
+              <ArrowSmallRightIcon className="w-8 h-8 -ml-2" />
+              <span>Contact Me</span>
+            </button>
           </div>
-          <div className="col-span-3 pt-2 pr-2" >
-            <About/>
+          <div className="col-span-3 pr-2" >
+            <Menu />
           </div>
         </div>
       </div>
@@ -44,7 +41,7 @@ export default function Hero() {
 
 
 
-export const About = () => {
+export const Menu = () => {
   return (
     <section className="">
       <div className="mx-auto max-w-5xl">
@@ -134,7 +131,7 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-4xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
+          className="relative z-10 block text-2xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-4xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -163,8 +160,8 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
           translateY: "-50%",
         }}
         variants={{
-          initial: { scale: 0, rotate: "-12.5deg" },
-          whileHover: { scale: 1, rotate: "12.5deg" },
+          initial: { scale: 0},
+          whileHover: { scale: 1},
         }}
         transition={{ type: "spring" }}
         src={imgSrc}
