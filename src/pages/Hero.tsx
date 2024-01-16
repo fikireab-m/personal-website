@@ -1,7 +1,6 @@
 import open_laptop from "../assets/images/971.png";
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import cloudImg from "../assets/images/cloud.jpg";
 import Card from "../components/Card";
 export default function Hero() {
@@ -10,7 +9,7 @@ export default function Hero() {
       <div className="relative isolate px-6 lg:px-8">
 
         <div className="mx-auto max-w-7xl px-8 py-8 grid grid-cols-1 md:grid-cols-5 items-center gap-8 mx-auto">
-          <div className="text-center md:text-left col-span-2">
+          <div className="text-center md:text-left col-span-4">
             <h1 className="text-4xl font-bold tracking-tight text-transparent sm:text-9xl bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
               Hi.
             </h1>
@@ -201,7 +200,7 @@ export default function Hero() {
 
             </div>
           </div>
-          <div className="col-span-3" >
+          <div className="col-span-1" >
             <Menu />
           </div>
         </div>
@@ -254,7 +253,7 @@ interface LinkProps {
   href: string;
 }
 
-const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
+const Link: React.FC<LinkProps> = ({ heading, subheading, href }) => {
   const ref = useRef<HTMLAnchorElement>(null);
 
   const x = useMotionValue(0);
@@ -264,7 +263,7 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
   const mouseYSpring = useSpring(y);
 
   const top = useTransform(mouseYSpring, [0.5, -0.5], ["40%", "60%"]);
-  const left = useTransform(mouseXSpring, [0.5, -0.5], ["60%", "70%"]);
+  const right = useTransform(mouseXSpring, [0.5, -0.5], ["60%", "70%"]);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     const rect = ref.current?.getBoundingClientRect();
@@ -293,6 +292,22 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
       whileHover="whileHover"
       className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
     >
+      <motion.div
+        style={{
+          top,
+          right,
+          translateX: "-50%",
+          translateY: "-50%",
+        }}
+        variants={{
+          initial: { scale: 0 },
+          whileHover: { scale: 1 },
+        }}
+        transition={{ type: "spring" }}
+        className="absolute z-0 rounded-lg object-cover md:h-64 md:w-96"
+      >
+        <Card />
+      </motion.div>
       <div>
         <motion.span
           variants={{
@@ -304,7 +319,7 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-2xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-sky-500 md:text-4xl"
+          className="relative z-10 block text-xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-sky-500 md:text-2xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -324,42 +339,6 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
           {subheading}
         </span>
       </div>
-
-      <motion.div
-        style={{
-          top,
-          left,
-          translateX: "-50%",
-          translateY: "-50%",
-        }}
-        variants={{
-          initial: { scale: 0 },
-          whileHover: { scale: 1 },
-        }}
-        transition={{ type: "spring" }}
-        // src={imgSrc}
-        className="absolute z-0 rounded-lg object-cover md:h-48 md:w-64"
-        // alt={`Image representing a link for ${heading}`}
-      >
-        <Card/>
-      </motion.div>
-
-      <motion.div
-        variants={{
-          initial: {
-            x: "25%",
-            opacity: 0,
-          },
-          whileHover: {
-            x: "0%",
-            opacity: 1,
-          },
-        }}
-        transition={{ type: "spring" }}
-        className="relative z-10 p-4"
-      >
-        <ArrowLongRightIcon className="text-5xl text-neutral-50" />
-      </motion.div>
     </motion.a>
   );
 };

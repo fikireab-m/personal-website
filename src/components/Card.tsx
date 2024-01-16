@@ -50,7 +50,7 @@ const Card: React.FC = () => {
         rotateX,
         transformStyle: 'preserve-3d',
       }}
-      className="relative h-64 w-48 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600"
+      className="relative h-64 w-96 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600"
     >
       <div
         style={{
