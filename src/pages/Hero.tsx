@@ -1,22 +1,20 @@
-import open_laptop from "../assets/images/971.png";
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
-import cloudImg from "../assets/images/cloud.jpg";
 import Card from "../components/Card";
 export default function Hero() {
   return (
     <div className="bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-gray-900 via-slate-900 to-gray-900 lg:overflow-hidden lg:h-screen">
       <div className="relative isolate px-6 lg:px-8">
 
-        <div className="mx-auto max-w-7xl px-8 py-8 grid grid-cols-1 md:grid-cols-5 items-center gap-8 mx-auto">
-          <div className="text-center md:text-left col-span-4">
-            <h1 className="text-4xl font-bold tracking-tight text-transparent sm:text-9xl bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
+        <div className="mx-auto max-w-7xl px-8 py-8 grid grid-cols-1 md:grid-cols-5 gap-8 mx-auto">
+          <div className="text-center md:text-left col-span-4 mt-8">
+            <h1 className="text-4xl font-bold tracking-tight text-transparent sm:text-6xl bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
               Hi.
             </h1>
             <h1 className="text-4xl font-bold tracking-tight text-gray-400 sm:text-4xl" style={{ backgroundClip: "text" }}>
               I'm Fikireab.
             </h1>
-            <h1 className="text-4xl font-bold tracking-tight text-gray-200 sm:text-4xl" style={{ backgroundClip: "text" }}>
+            <h1 className="text-6xl lg:text-8xl xl:9xl font-bold tracking-tight text-gray-200" style={{ backgroundClip: "text" }}>
               A software engineer.
             </h1>
             <p className="mt-6 text-xl font-thin leading-8 text-gray-200">
@@ -200,7 +198,7 @@ export default function Hero() {
 
             </div>
           </div>
-          <div className="col-span-1" >
+          <div className="col-span-1 fixed right-8" >
             <Menu />
           </div>
         </div>
@@ -219,26 +217,18 @@ export const Menu = () => {
       <div className="mx-auto max-w-5xl">
         <Link
           heading="About"
-          subheading="Learn what I do here"
-          imgSrc={cloudImg}
-          href="#"
+          href="#aboutme"
         />
         <Link
           heading="Experiance"
-          subheading="I work with great people"
-          imgSrc={open_laptop}
           href="#"
         />
         <Link
           heading="Projects"
-          subheading="My work speaks for itself"
-          imgSrc={cloudImg}
           href="#"
         />
         <Link
           heading="Contact"
-          subheading="Incase you're bored"
-          imgSrc={open_laptop}
           href="#"
         />
       </div>
@@ -248,12 +238,10 @@ export const Menu = () => {
 
 interface LinkProps {
   heading: string;
-  imgSrc: string;
-  subheading: string;
   href: string;
 }
 
-const Link: React.FC<LinkProps> = ({ heading, subheading, href }) => {
+const Link: React.FC<LinkProps> = ({ heading, href }) => {
   const ref = useRef<HTMLAnchorElement>(null);
 
   const x = useMotionValue(0);
@@ -335,9 +323,6 @@ const Link: React.FC<LinkProps> = ({ heading, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-base text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
-          {subheading}
-        </span>
       </div>
     </motion.a>
   );
