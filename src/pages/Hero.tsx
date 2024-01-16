@@ -3,6 +3,7 @@ import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import cloudImg from "../assets/images/cloud.jpg";
+import Card from "../components/Card";
 export default function Hero() {
   return (
     <div className="bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-gray-900 via-slate-900 to-gray-900 lg:overflow-hidden lg:h-screen">
@@ -199,7 +200,6 @@ export default function Hero() {
               </a>
 
             </div>
-
           </div>
           <div className="col-span-3" >
             <Menu />
@@ -325,7 +325,7 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
         </span>
       </div>
 
-      <motion.img
+      <motion.div
         style={{
           top,
           left,
@@ -337,10 +337,12 @@ const Link: React.FC<LinkProps> = ({ heading, imgSrc, subheading, href }) => {
           whileHover: { scale: 1 },
         }}
         transition={{ type: "spring" }}
-        src={imgSrc}
-        className="absolute z-0 h-24 w-32 rounded-lg object-cover md:h-48 md:w-64"
-        alt={`Image representing a link for ${heading}`}
-      />
+        // src={imgSrc}
+        className="absolute z-0 rounded-lg object-cover md:h-48 md:w-64"
+        // alt={`Image representing a link for ${heading}`}
+      >
+        <Card/>
+      </motion.div>
 
       <motion.div
         variants={{
