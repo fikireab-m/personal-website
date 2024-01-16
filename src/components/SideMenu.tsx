@@ -3,8 +3,8 @@ import { useRef } from "react";
 import Card from "../components/Card";
 export const Menu = () => {
     return (
-      <section className="">
-        <div className="mx-auto max-w-5xl">
+      <aside className="hidden md:block fixed z-10 top-32 right-8">
+        <div>
           <Link
             heading="About"
             href="#aboutme"
@@ -22,7 +22,7 @@ export const Menu = () => {
             href="#"
           />
         </div>
-      </section>
+      </aside>
     );
   };
   

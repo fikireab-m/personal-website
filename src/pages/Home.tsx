@@ -1,15 +1,15 @@
 const Home: React.FC = () => {
     return (
-        <div className="bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-gray-900 via-slate-900 to-gray-900 h-screen">
+        <div className="bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-gray-900 via-slate-900 to-gray-900 lg:h-screen">
             <div className="relative isolate lg:px-8">
-                <div className="mx-auto max-w-7xl px-2 sm:px-8 lg:px-16 py-16 text-left lg:ml-16">
+                <div className="mx-auto max-w-7xl px-2 sm:px-8 lg:px-16 pt-32 pb-16 text-left lg:ml-16">
                     <h1 className="text-4xl font-bold tracking-tight text-transparent sm:text-6xl bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
                         Hi.
                     </h1>
-                    <h1 className="text-4xl font-bold tracking-tight text-gray-400 sm:text-4xl" style={{ backgroundClip: "text" }}>
+                    <h1 className="text-4xl font-bold text-gray-500 sm:text-6xl transform transition-all duration-500 ease-in-out hover:tracking-widest hover:text-sky-600" style={{ backgroundClip: "text" }}>
                         I'm Fikireab.
                     </h1>
-                    <h1 className="text-6xl lg:text-8xl xl:9xl font-bold tracking-tight text-gray-200" style={{ backgroundClip: "text" }}>
+                    <h1 className="text-6xl lg:text-8xl xl:9xl font-bold tracking-tight text-gray-400 transform transition-all duration-500 ease-in-out hover:text-blue-600 hover:text-sky-500" style={{ backgroundClip: "text" }}>
                         A software engineer.
                     </h1>
                     <p className="mt-6 text-xl font-thin leading-8 text-gray-200">

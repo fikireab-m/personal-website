@@ -12,4 +12,3 @@
       var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
     background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
   }
-  
