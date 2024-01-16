@@ -74,7 +74,7 @@ export const Menu = () => {
           style={{
             top,
             right,
-            translateX: "-50%",
+            translateX: "-15%",
             translateY: "-50%",
           }}
           variants={{
