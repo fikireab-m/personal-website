@@ -12,7 +12,9 @@ const AboutMe = () => {
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa omnis recusandae hic ad. Explicabo nobis harum, aliquam illo iure vel expedita, eveniet ut non consectetur, corrupti aliquid? Eius, nulla dolorem.
                     </div>
                     <div className="col-span-1" >
-                        <img src={myPic} alt="My pic" />
+                        <div className="img-container w-96 h-96">
+                            <img src={myPic} alt="My pic"/>
+                        </div>
                     </div>
                 </div>
             </div>
