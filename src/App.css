@@ -14,11 +14,16 @@
   background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
 }
 
+.title-text:hover {
+  -webkit-animation: text-shadow-drop-bottom .6s both;
+  animation: text-shadow-drop-bottom .6s both;
+}
+
 .img-container {
   background-color: #00eeff18;
   border-radius: 19% 52% 29% 23% / 16% 41% 21% 17%;
   overflow: hidden;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .img-container img {
@@ -28,12 +33,12 @@
 .img-container:hover {
   -webkit-animation: shadow-drop-center both;
   animation: shadow-drop-center both;
-  border: skyblue 5px solid;
+  border: skyblue 2px solid;
 }
 
-.img-container:hover img {
+/* .img-container:hover img {
   filter: none;
-}
+} */
 
 @keyframes shadow-drop-center {
   0% {
@@ -51,19 +56,13 @@
   }
 }
 
-.title-text:hover {
-  -webkit-animation: text-shadow-drop-bottom .6s both;
-  animation: text-shadow-drop-bottom .6s both;
-}
-
-
 @-webkit-keyframes text-shadow-drop-bottom {
   0% {
     text-shadow: 0 0 0 transparent
   }
 
   100% {
-    text-shadow: 0 6px 18px rgba(70, 203, 255, 0.329)
+    text-shadow: 2px 2px 4px rgba(70, 203, 255, 0.6);
   }
 }
 
@@ -73,6 +72,6 @@
   }
 
   100% {
-    text-shadow: 0 6px 18px rgba(70, 203, 255, 0.329)
+    text-shadow: 2px 2px 4px rgb(70, 203, 255,0.6);
   }
 }
