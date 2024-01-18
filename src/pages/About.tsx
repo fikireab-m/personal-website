@@ -6,12 +6,14 @@ const AboutMe = () => {
                 <h1 className="text-4xl font-bold text-center text-transparent bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
                     About Me
                 </h1>
-                <div className="px-8 py-8 grid grid-cols-1 md:grid-cols-2 items-center gap-8 mx-auto">
+                <div className="px-8 py-8 grid grid-cols-1 md:grid-cols-2 content-center items-start gap-8 mx-auto">
 
-                    <div className="text-justify md:text-left text-white">
-                        <p className=" leading-7">
-                            Hello there! I'm <strong>Fikireab Mekuriaw</strong>, a passionate and innovative software engineer dedicated to crafting exceptional digital experiences. With a strong foundation in full-stack development and a commitment to continuous learning, I thrive on turning ideas into reality through clean, efficient, and scalable code.
-                        </p>
+                    <div className="md:text-left text-gray-400">
+                        <div className="rounded-lg p-4 hover:bg-[#00eeff18] hover:bg-opacity-25">
+                            <p className="text-justify leading-6">
+                                Hello, I'm <strong>Fikireab Mekuriaw</strong>, a seasoned software engineer dedicated to crafting exceptional digital experiences with over 4 years of experience. My journey began with a love for problem-solving and has evolved into a passion for turning ideas into elegant, efficient, and scalable solutions. I approach software engineering as an art form, blending creativity and precision to build impactful digital experiences. Adapting to the rapid pace of technology is a continuous thrill for me, and I thrive in collaborative environments where diverse perspectives converge to create solutions greater than the sum of their parts. Beyond the code, I love traveling and learning the languages and cultures of others, believing that a well-rounded life enhances creativity.
+                            </p>
+                        </div>
                         <h1 className="px-8 pt-8 text-2xl font-bold text-transparent bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
                             Skills
                         </h1>

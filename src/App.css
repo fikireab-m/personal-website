@@ -18,7 +18,10 @@
   -webkit-animation: text-shadow-drop-bottom .6s both;
   animation: text-shadow-drop-bottom .6s both;
 }
-
+.about-me-text{
+  text-align: justify;
+  text-justify: inter-word;
+}
 .img-container {
   background-color: #00eeff18;
   border-radius: 19% 52% 29% 23% / 16% 41% 21% 17%;
