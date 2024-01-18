@@ -36,9 +36,9 @@
   border: skyblue 2px solid;
 }
 
-/* .img-container:hover img {
+.img-container:hover img {
   filter: none;
-} */
+}
 
 @keyframes shadow-drop-center {
   0% {
