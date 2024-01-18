@@ -6,10 +6,10 @@ const Home: React.FC = () => {
                     <h1 className="text-4xl font-bold tracking-tight text-transparent sm:text-6xl bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
                         Hi.
                     </h1>
-                    <h1 className="text-4xl font-bold text-gray-500 sm:text-6xl transform transition-all duration-500 ease-in-out hover:tracking-widest hover:text-sky-600" style={{ backgroundClip: "text" }}>
-                        I'm Fikireab.
+                    <h1 className="text-4xl font-bold text-gray-500" style={{ backgroundClip: "text" }}>
+                        I'm <span className="sm:text-6xl transform transition-all duration-500 ease-in-out hover:tracking-widest hover:text-sky-600">Fikireab</span>.
                     </h1>
-                    <h1 className="text-6xl lg:text-8xl xl:9xl font-bold tracking-tight text-gray-400 transform transition-all duration-500 ease-in-out hover:text-blue-600 hover:text-sky-500" style={{ backgroundClip: "text" }}>
+                    <h1 className="title-text text-6xl lg:text-8xl xl:9xl font-bold tracking-tight text-gray-400 transform transition-all duration-500 ease-in-out hover:text-blue-600 hover:text-blue-600" style={{ backgroundClip: "text" }}>
                         A software engineer.
                     </h1>
                     <p className="mt-6 text-xl font-thin leading-8 text-gray-200">
@@ -20,8 +20,9 @@ const Home: React.FC = () => {
                         Let's Talk
                     </button>
                 </div>
-            </div>
+                Wa</div>
         </div>
     )
 }
 export default Home
+
