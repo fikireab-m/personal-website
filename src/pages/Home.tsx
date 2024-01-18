@@ -20,7 +20,7 @@ const Home: React.FC = () => {
                         Let's Talk
                     </button>
                 </div>
-                Wa</div>
+            </div>
         </div>
     )
 }
