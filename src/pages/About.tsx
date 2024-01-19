@@ -8,7 +8,7 @@ const AboutMe = () => {
                 </h1>
                 <div className="px-2 sm:px-8 py-8 grid grid-cols-1 md:grid-cols-2 items-start gap-8 mx-auto md:mr-32">
                     <div className="md:text-left text-gray-400">
-                        <div className="rounded-lg p-4 hover:bg-[#00eeff18]">
+                        <div className="rounded-lg p-4 hover:shadow-[0.5rem_0.5rem_#F44336,-0.5rem_-0.5rem_#00BCD4] hover:bg-slate-900 hover:text-gray-200 transition">
                             <p className="text-justify leading-6">
                                 Hello, I'm <strong>Fikireab Mekuriaw</strong>, a seasoned software engineer dedicated to crafting exceptional digital experiences with over 4 years of experience. My journey began with a love for problem-solving and has evolved into a passion for turning ideas into elegant, efficient, and scalable solutions. I approach software engineering as an art form, blending creativity and precision to build impactful digital experiences. Adapting to the rapid pace of technology is a continuous thrill for me, and I thrive in collaborative environments where diverse perspectives converge to create solutions greater than the sum of their parts. Beyond the code, I love traveling and learning the languages and cultures of others, believing that a well-rounded life enhances creativity.
                             </p>
