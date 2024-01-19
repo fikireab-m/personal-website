@@ -1,4 +1,5 @@
 import myPic from "../assets/images/picme.png"
+import Card from "../components/Card"
 const AboutMe = () => {
     return (
         <div id="aboutme" className="bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-gray-900 via-slate-900 to-gray-900 lg:overflow-hidden lg:h-screen">
@@ -25,9 +26,14 @@ const AboutMe = () => {
                         </ul>
                     </div>
                     <div>
-                        <div className="img-container max-w-96">
-                            <img src={myPic} alt="My pic" />
-                        </div>
+                        <Card height={96} width={96}>
+                            <img src={myPic} alt="My pic" className="w-96"/>
+                        </Card>
+                        {/* <div className="img-container max-w-96">
+                            <Card>
+                                <img src={myPic} alt="My pic" />
+                            </Card>
+                        </div> */}
                     </div>
                 </div>
             </div>

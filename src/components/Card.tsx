@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 
+interface CardProp {
+  children: ReactNode,
+  height: number,
+  width: number
+}
 
-const Card: React.FC = () => {
+const Card: React.FC<CardProp> = ({ children, height, width }) => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -50,30 +55,22 @@ const Card: React.FC = () => {
         rotateX,
         transformStyle: 'preserve-3d',
       }}
-      className="relative h-64 w-96 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600"
-    >
+      className={`relative h-${height} w-${width} rounded-xl bg-gradient-to-br from-blue-900 to-purple-900`}>
       <div
         style={{
           transform: 'translateZ(75px)',
           transformStyle: 'preserve-3d',
         }}
-        className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg"
+        className="absolute inset-4 grid place-content-center rounded-xl bg-gray-400 overflow-hidden shadow-2xl"
       >
-        {/* Uncomment the following lines if using an icon */}
-        {/* <FiMousePointer
-          style={{
-            transform: 'translateZ(75px)',
-          }}
-          className="mx-auto text-4xl"
-        /> */}
-        <p
+        <div
           style={{
             transform: 'translateZ(50px)',
           }}
           className="text-center text-2xl font-bold"
         >
-          Page Title
-        </p>
+          {children}
+        </div>
       </div>
     </motion.div>
   );
