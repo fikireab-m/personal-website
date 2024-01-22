@@ -26,8 +26,8 @@ const AboutMe = () => {
                         </ul>
                     </div>
                     <div>
-                        <Card height={96} width={96}>
-                            <img src={myPic} alt="My pic" className="w-96"/>
+                        <Card height={400} width={400}>
+                            <img src={myPic} alt="My pic" className="w-96" />
                         </Card>
                         {/* <div className="img-container max-w-96">
                             <Card>

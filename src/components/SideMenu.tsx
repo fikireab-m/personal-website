@@ -84,7 +84,7 @@ export const Menu = () => {
           transition={{ type: "spring" }}
           className="absolute z-0 rounded-lg object-cover md:h-64 md:w-96"
         >
-          <Card height={64} width={96}>
+          <Card height={200} width={300}>
             <span>{heading} page</span>
           </Card>
         </motion.div>

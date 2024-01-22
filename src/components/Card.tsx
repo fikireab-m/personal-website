@@ -54,8 +54,10 @@ const Card: React.FC<CardProp> = ({ children, height, width }) => {
         rotateY,
         rotateX,
         transformStyle: 'preserve-3d',
+        height: height,
+        width:width
       }}
-      className={`relative h-${height} w-${width} rounded-xl bg-gradient-to-br from-blue-900 to-purple-900`}>
+      className="relative rounded-xl bg-gradient-to-br from-blue-900 to-purple-900">
       <div
         style={{
           transform: 'translateZ(75px)',
