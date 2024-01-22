@@ -23,7 +23,6 @@
   text-justify: inter-word;
 }
 .img-container {
-  background-color: #00eeff18;
   border-radius: 19% 52% 29% 23% / 16% 41% 21% 17%;
   overflow: hidden;
   transition: all 1s;
@@ -36,7 +35,7 @@
 .img-container:hover {
   -webkit-animation: shadow-drop-center both;
   animation: shadow-drop-center both;
-  border: skyblue 2px solid;
+  border: rgba(135, 207, 235, 0.342), 2px solid;
 }
 
 .img-container:hover img {
@@ -54,8 +53,8 @@
   100% {
     -webkit-transform: translateZ(50px);
     transform: translateZ(50px);
-    -webkit-box-shadow: 0 0 25px 0 rgb(70, 203, 255), inset 0 0 25px 0 rgb(70, 203, 255);
-    box-shadow: 0 0 25px 0 rgb(70, 203, 255), inset 0 0 25px 0 rgb(70, 203, 255);
+    -webkit-box-shadow: 0 0 25px 0 rgb(70, 203, 255), inset 0 0 8 0 rgb(70, 203, 255);
+    box-shadow: 0 0 25px 0 rgb(70, 203, 255), inset 0 0 8px 0 rgb(70, 203, 255);
   }
 }
 
