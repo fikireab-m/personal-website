@@ -11,15 +11,15 @@ export const Menu = () => {
           />
           <Link
             heading="Experiance"
-            href="#"
+            href="#experiance"
           />
           <Link
             heading="Projects"
-            href="#"
+            href="#projects"
           />
           <Link
             heading="Contact"
-            href="#"
+            href="#contact"
           />
         </div>
       </aside>

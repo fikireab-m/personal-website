@@ -4,8 +4,8 @@ interface LanguageChipProp {
 }
 const LanguageChip: React.FC<LanguageChipProp> = ({ label, icon }) => {
   return (
-    <div className="rounded-full px-2 py-1.5 bg-gray-900 text flex justify-start items-center gap-2">
-      <img src={icon} alt={`${label}'s icon`} className="w-8 h-8" />
+    <div className="rounded-full px-2 py-1 bg-gray-900 text flex justify-start items-center gap-2 text-sm">
+      <img src={icon} alt={`${label}'s icon`} className="w-6 h-6" />
       <span>{label}</span>
     </div>
   )
