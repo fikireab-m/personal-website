@@ -1,12 +1,12 @@
 import { ReactNode } from "react"
 
 interface ContentBoxProp {
-    content: ReactNode
+    children: ReactNode
 }
-const ContentBox: React.FC<ContentBoxProp> = ({ content }) => {
+const ContentBox: React.FC<ContentBoxProp> = ({ children }) => {
     return (
-        <div className="max-w-5xl hover:bg-gray-800 rounder-lg">
-            {content}
+        <div className="max-w-5xl rounder-lg p-4 bg-gray-800 transform transition-all duration-500 ease-in-out">
+            {children}
         </div>
     )
 }
