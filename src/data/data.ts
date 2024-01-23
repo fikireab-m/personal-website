@@ -64,9 +64,9 @@ export const experiences: Experience[] = [
         desc: `Developed and implemented chatbot solutions using Python,React,ChatterBot and Dialogflow.
         Applied NLP techniques like tokenization, part-of-speech-tagging, named entity recognition, and other usefull techniques for effective user interaction. Collaborated with cross-functional teams to ensure user-friendly conversational flows. Integrated chatbots with the learnig management system for seamless communication. Conducted testing and debugging, ensuring a smooth user experience. Demonstrated adaptability and commitment to staying updated on evolving technologies.`,
         techstacks: [
-            { icon: reactIcon, title: "React js" },
-            { icon: reactIcon, title: "React js" },
-            { icon: reactIcon, title: "React js" },
+            { icon: reactIcon, title: "Python" },
+            { icon: reactIcon, title: "ChatBot" },
+            { icon: reactIcon, title: "Dialog Flow" },
             { icon: reactIcon, title: "React js" },]
     }
 ]
