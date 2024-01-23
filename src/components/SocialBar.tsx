@@ -4,7 +4,7 @@ import { SiGmail } from "react-icons/si";
 import myPic from "../assets/images/picme_rounded.png"
 const SocialBar = () => {
     return (
-        <aside className="fixed z-10 top-0 right-0 left-0 flex justify-between items-center pt-4 px-8 lg:px-16">
+        <aside className="fixed z-10 top-0 right-0 left-0 flex justify-between items-center pt-4 px-8 lg:pr-16">
             <a href="">
                 <img src={myPic} alt="My picture" className="w-12 h-12 rounded-full" />
             </a>
