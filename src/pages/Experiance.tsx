@@ -11,7 +11,7 @@ const Expriance = () => {
                 </h1>
                 <div className="px-2 sm:px-8 pt-2 pb-8 grid grid-cols-1 md:grid-cols-2 content-center items-start gap-8 mx-auto md:mr-32 text-gray-200">
                     <ContentBox>
-                        <h4 className="p-2 font-bold text-center">Experiance 1</h4>
+                        <h4 className="p-2 font-bold text-center group-hover:text-sky-500">Experiance 1</h4>
                         <p className="text-justify">Description</p>
                         <div className="flex justify-center items-center gap-2 flex-wrap">
                             <LanguageChip label="TypeScript" icon={tsIcon} />
@@ -21,7 +21,7 @@ const Expriance = () => {
                         </div>
                     </ContentBox>
                     <ContentBox>
-                        <h4 className="p-2 font-bold text-center">Experiance 2</h4>
+                        <h4 className="p-2 font-bold text-center group-hover:text-sky-500">Experiance 2</h4>
                         <p className="text-justify">Description</p>
                         <div className="flex justify-center items-center gap-4 flex-wrap">
                             <LanguageChip label="React js" icon={reactIcon} />
@@ -31,7 +31,7 @@ const Expriance = () => {
                         </div>
                     </ContentBox>
                     <ContentBox>
-                        <h4 className="p-2 font-bold text-center">Experiance 3</h4>
+                        <h4 className="p-2 font-bold text-center group-hover:text-sky-500">Experiance 3</h4>
                         <p className="text-justify">Description</p>
                         <div className="flex justify-center items-center gap-2 flex-wrap">
                             <LanguageChip label="React js" icon={reactIcon} />
@@ -41,7 +41,7 @@ const Expriance = () => {
                         </div>
                     </ContentBox>
                     <ContentBox>
-                        <h4 className="p-2 font-bold text-center">Experiance 4</h4>
+                        <h4 className="p-2 font-bold text-center group-hover:text-sky-500">Experiance 4</h4>
                         <p className="text-justify">Description</p>
                         <div className="flex justify-center items-center gap-2 flex-wrap">
                             <LanguageChip label="React js" icon={reactIcon} />

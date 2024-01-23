@@ -14,8 +14,8 @@ const AboutMe = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="img-container max-w-xl md:col-span-2 lg:col-span-3 rouded-full bg-gray-800 flex justify-center">
-                        <img src={myPic} alt="My pic" />
+                    <div className="img-container max-w-xl md:col-span-2 lg:col-span-3 rouded-full bg-gray-800 flex justify-center group">
+                        <img src={myPic} alt="My pic" className="group-hover:scale-105 transform transition all duration-500"/>
                     </div>
                 </div>
             </div>
