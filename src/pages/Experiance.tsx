@@ -1,6 +1,5 @@
 import ContentBox from "../components/ContentBox"
 import LanguageChip from "../components/LangaugeChip"
-import reactIcon from "../assets/icons/reactjs.png"
 import { experiences } from "../data/data"
 const Expriance = () => {
     return (
@@ -22,10 +21,9 @@ const Expriance = () => {
                                 {experience.desc}
                             </p>
                             <div className="flex justify-center items-center gap-2 flex-wrap pt-2 px-8">
-                                <LanguageChip label="Python" icon={reactIcon} />
-                                <LanguageChip label="React js" icon={reactIcon} />
-                                <LanguageChip label="ChatterBot" icon={reactIcon} />
-                                <LanguageChip label="Dialogue Flow" icon={reactIcon} />
+                                {
+                                    experience.techstacks.map((techstack, i) => <LanguageChip key={i} label={techstack.title} icon={techstack.icon} />)
+                                }
                             </div>
                         </ContentBox>)
                     }

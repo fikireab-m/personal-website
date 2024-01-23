@@ -41,12 +41,12 @@ export const experiences: Experience[] = [
         company: "Adama Scince and Technology University",
         location: "Adama, Oromia, Ethiopia",
         date: "june 20,2023 - Sept 05, 2022",
-        desc: "",
+        desc: `As a Front-end Developer, I have crafted a seamless Learning Management System (LMS) utilizing React.js, Material UI, Tailwind CSS, Redux.js, and Figma. Collaborating closely with the design team, I ensured an intuitive interface that prioritized user experience. Leveraging Redux Toolkit, I achieved efficient state management, while meticulous performance optimization efforts enhanced the overall responsiveness. The project not only showcased technical proficiency but also demonstrated a commitment to delivering a cutting-edge educational platform.`,
         techstacks: [
             { icon: reactIcon, title: "React js" },
-            { icon: reactIcon, title: "React js" },
-            { icon: reactIcon, title: "React js" },
-            { icon: reactIcon, title: "React js" },]
+            { icon: reactIcon, title: "Redux js" },
+            { icon: reactIcon, title: "Material UI" },
+            { icon: reactIcon, title: "Tailwind CSS" },]
     },
     {
         title: "Chatbot developer",
