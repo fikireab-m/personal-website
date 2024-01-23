@@ -6,6 +6,7 @@ interface TechStack { icon: string, title: string }
 interface Experience {
     title: string,
     company: string,
+    location: string,
     date: string,
     desc: string,
     techstacks: TechStack[]
@@ -14,6 +15,7 @@ export const experiences: Experience[] = [
     {
         title: "Fullstack developer",
         company: "Ministry of Innovation and Technology",
+        location: "Addis Ababa, Ethiopia",
         date: "Nov 20,2023 - Present",
         desc: "",
         techstacks: [
@@ -25,6 +27,7 @@ export const experiences: Experience[] = [
     {
         title: "Fullstack developer",
         company: "KGP2 SS India Pvt Ltd",
+        location: "Fully remote",
         date: "Feb 06,2023 - Nov 15, 2023",
         desc: "",
         techstacks: [
@@ -36,6 +39,7 @@ export const experiences: Experience[] = [
     {
         title: "Front-end developer",
         company: "Adama Scince and Technology University",
+        location: "Adama, Oromia, Ethiopia",
         date: "june 20,2023 - Sept 05, 2022",
         desc: "",
         techstacks: [
@@ -47,8 +51,10 @@ export const experiences: Experience[] = [
     {
         title: "Chatbot developer",
         company: "Adama Science and Technoloy University",
+        location: "Adama, Oromia, Ethiopia",
         date: "June 28, 2021 - August 30",
-        desc: "",
+        desc: `Developed and implemented chatbot solutions using Python,React,ChatterBot and Dialogflow.
+        Applied NLP techniques like tokenization, part-of-speech-tagging, named entity recognition, and other usefull techniques for effective user interaction. Collaborated with cross-functional teams to ensure user-friendly conversational flows. Integrated chatbots with the learnig management system for seamless communication. Conducted testing and debugging, ensuring a smooth user experience. Demonstrated adaptability and commitment to staying updated on evolving technologies.`,
         techstacks: [
             { icon: reactIcon, title: "React js" },
             { icon: reactIcon, title: "React js" },
