@@ -1,9 +1,9 @@
 import myPic from "../assets/images/picme.png"
 const AboutMe = () => {
     return (
-        <div id="aboutme" className="bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-gray-900 via-slate-900 to-gray-900">
+        <div id="aboutme" className="bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-gray-900 via-slate-900 to-gray-900 py-16">
             <div className="relative isolate mx-auto max-w-7xl ">
-                <h1 className="text-4xl font-bold text-center text-transparent bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
+                <h1 className="text-4xl font-bold text-center text-transparent bg-gradient-to-br from-blue-600 to-purple-600 pb-8" style={{ backgroundClip: "text" }}>
                     About Me
                 </h1>
                 <div className="px-2 sm:px-8 py-8 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-7 content-center items-start gap-8 mx-auto md:mr-48">

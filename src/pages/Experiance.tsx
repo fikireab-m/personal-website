@@ -6,7 +6,7 @@ const Expriance = () => {
     return (
         <div id="experiance" className="bg-[conic-gradient(at_top_left,_var(--tw-gradient-stops))] from-gray-900 via-slate-900 to-gray-900">
             <div className="relative isolate mx-auto max-w-7xl ">
-                <h1 className="text-4xl font-bold text-center text-transparent bg-gradient-to-br from-blue-600 to-purple-600" style={{ backgroundClip: "text" }}>
+                <h1 className="text-4xl font-bold text-center text-transparent bg-gradient-to-br from-blue-600 to-purple-600 pb-8" style={{ backgroundClip: "text" }}>
                     Experiances
                 </h1>
                 <div className="px-2 sm:px-8 pt-2 pb-8 grid grid-cols-1 md:grid-cols-2 content-center items-start gap-8 mx-auto md:mr-32 text-gray-200">
