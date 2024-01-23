@@ -20,7 +20,7 @@ const Expriance = () => {
                             <p className="text-justify text-sm group-hover:text-gray-200 ">
                                 {experience.desc}
                             </p>
-                            <div className="flex justify-center items-center gap-2 flex-wrap pt-2 px-8">
+                            <div className="flex justify-center items-center gap-1 xl:gap-2 flex-wrap pt-2 px-4 xl:px-8">
                                 {
                                     experience.techstacks.map((techstack, i) => <LanguageChip key={i} label={techstack.title} icon={techstack.icon} />)
                                 }

@@ -19,22 +19,30 @@ export const experiences: Experience[] = [
         date: "Nov 20,2023 - Present",
         desc: "",
         techstacks: [
+            { icon: reactIcon, title: "Typescript" },
             { icon: reactIcon, title: "React js" },
-            { icon: reactIcon, title: "React js" },
-            { icon: reactIcon, title: "React js" },
-            { icon: reactIcon, title: "React js" },]
+            { icon: reactIcon, title: "Python" },
+            { icon: reactIcon, title: "Django" },
+            { icon: reactIcon, title: "Tailwind CSS" },
+            { icon: reactIcon, title: "Material UI" },
+            { icon: reactIcon, title: "ERP Next" },]
     },
     {
-        title: "Fullstack developer",
+        title: "Fullstack developer | Flutter developer",
         company: "KGP2 SS India Pvt Ltd",
         location: "Fully remote",
         date: "Feb 06,2023 - Nov 15, 2023",
         desc: "",
         techstacks: [
+            { icon: reactIcon, title: "Flutter" },
+            { icon: reactIcon, title: "Typescript" },
             { icon: reactIcon, title: "React js" },
-            { icon: reactIcon, title: "React js" },
-            { icon: reactIcon, title: "React js" },
-            { icon: reactIcon, title: "React js" },]
+            { icon: reactIcon, title: "Redux js" },
+            { icon: reactIcon, title: "Tailwind CSS" },
+            { icon: reactIcon, title: "Express js" },
+            { icon: reactIcon, title: "MongoDB" },
+            { icon: reactIcon, title: "Firebase" },
+            { icon: reactIcon, title: "Node js" },]
     },
     {
         title: "Front-end developer",
