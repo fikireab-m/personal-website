@@ -68,7 +68,7 @@ export const Menu = () => {
         onMouseMove={handleMouseMove}
         initial="initial"
         whileHover="whileHover"
-        className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-4 transition-colors duration-500 hover:border-neutral-50 md:py-8"
+        className="group relative flex items-center justify-between border-b-2 border-neutral-700 py-2 transition-colors duration-500 hover:border-blue-500 md:py-4"
       >
         <motion.div
           style={{
@@ -99,7 +99,7 @@ export const Menu = () => {
               staggerChildren: 0.075,
               delayChildren: 0.25,
             }}
-            className="relative z-10 block text-xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-sky-500 md:text-2xl"
+            className="relative z-10 block text-xl text-neutral-500 transition-colors duration-500 group-hover:text-sky-500 md:text-2xl"
           >
             {heading.split("").map((l, i) => (
               <motion.span

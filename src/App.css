@@ -18,25 +18,13 @@
   -webkit-animation: text-shadow-drop-bottom .6s both;
   animation: text-shadow-drop-bottom .6s both;
 }
-.about-me-text{
-  text-align: justify;
-  text-justify: inter-word;
-}
-.img-container {
-  border-radius: 19% 52% 29% 23% / 16% 41% 21% 17%;
-  overflow: hidden;
-  transition: all 1s;
-}
 
-.img-container img {
-  filter: sepia(80%) saturate(100%);
-}
 
-.img-container:hover {
+/* .img-container:hover {
   -webkit-animation: shadow-drop-center both;
   animation: shadow-drop-center both;
   border: rgba(135, 207, 235, 0.342), 2px solid;
-}
+} */
 
 .img-container:hover img {
   filter: none;
