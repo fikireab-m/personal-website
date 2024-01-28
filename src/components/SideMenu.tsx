@@ -15,7 +15,7 @@ export const Menu = () => {
           />
           <Link
             heading="Projects"
-            href="#projects"
+            href="#project"
           />
           <Link
             heading="Contact"
