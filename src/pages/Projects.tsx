@@ -6,7 +6,7 @@ const Projects = () => {
         <h1 className="text-4xl font-bold text-center text-transparent bg-gradient-to-br from-blue-600 to-purple-600 pb-8" style={{ backgroundClip: "text" }}>
           Projects
         </h1>
-        <div className="px-2 sm:px-8 py-8 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-7 content-center items-start gap-8 mx-auto md:mr-48">
+        <div className="px-2 sm:px-8 py-8 grid grid-cols-1 md:grid-cols-5 lg:grid-cols-7 content-center items-center gap-8 mx-auto md:mr-48">
           <div className="md:text-left text-gray-400 md:col-span-3 lg:col-span-4 h-full">
             <div className="rounded-lg p-4 transform transition all duration-500 hover:text-gray-200">
               <p className="text-justify leading-7 ">

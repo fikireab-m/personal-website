@@ -70,7 +70,7 @@ const Card = ({ title, subtitle, Icon, href }: CardProps) => {
             href={href}
             className="w-full p-4 rounded relative overflow-hidden group bg-gray-800"
         >
-            <div className="absolute inset-0 bg-gradient-to-r from-sky-500 to-indigo-600 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 to-sky-600 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
 
             <Icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-400 group-hover:text-slate-100 group-hover:rotate-12 transition-transform duration-300" />
             <Icon className="mb-2 text-2xl text-violet-600 group-hover:text-white transition-colors relative z-10 duration-300" />
