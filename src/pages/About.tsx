@@ -43,15 +43,13 @@ const ServiceCards = () => {
                 <Card
                     title="Front-end Development"
                     subtitle="I create stunning UIs using various technologies"
-                    href="#"
                     Icon={FaLaptopCode}
                 />
-                <Card title="Backend Development" subtitle="I build fast and scalable systems" href="#" Icon={GrSettingsOption} />
-                <Card title="Mobile aApplication Development" subtitle="Beautiful cross platform mobile applications for business" href="#" Icon={FaMobileAlt} />
+                <Card title="Backend Development" subtitle="I build fast and scalable systems" Icon={GrSettingsOption} />
+                <Card title="Mobile Application Development" subtitle="Beautiful cross-platform mobile applications for business" Icon={FaMobileAlt} />
                 <Card
                     title="UI/UX Design"
                     subtitle="I create beautful yet simplified user interfaces for your users"
-                    href="#"
                     Icon={BsFront}
                 />
             </div>
@@ -62,14 +60,10 @@ interface CardProps {
     title: string,
     subtitle: string,
     Icon: IconType,
-    href: string
 }
-const Card = ({ title, subtitle, Icon, href }: CardProps) => {
+const Card = ({ title, subtitle, Icon }: CardProps) => {
     return (
-        <a
-            href={href}
-            className="w-full p-4 rounded relative overflow-hidden group bg-gray-800"
-        >
+        <span className="w-full p-4 rounded relative overflow-hidden group bg-gray-800">
             <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 to-sky-600 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
 
             <Icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-400 group-hover:text-slate-100 group-hover:rotate-12 transition-transform duration-300" />
@@ -80,7 +74,7 @@ const Card = ({ title, subtitle, Icon, href }: CardProps) => {
             <p className="text-gray-400 group-hover:text-violet-200 relative z-10 duration-300">
                 {subtitle}
             </p>
-        </a>
+        </span>
     );
 };
 
