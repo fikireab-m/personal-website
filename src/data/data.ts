@@ -1,5 +1,5 @@
 import tsIcon from "../assets/icons/ts.png"
-import jsIcon from "../assets/icons/js.png"
+import jsIcon from "../assets/icons/jsIcon.png"
 import pythonIcon from "../assets/icons/python.png"
 import flutterIcon from "../assets/icons/flutter.png"
 import dartIcon from "../assets/icons/dart.png"
